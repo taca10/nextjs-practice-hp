@@ -31,7 +31,7 @@ export default function Layout({ children, title = "HP by Nextjs" }) {
           </div>
         </nav>
       </header>
-      <main className="flex flex-1 justify-center items-center w-screen">
+      <main className="flex flex-1 justify-center items-center flex-col w-screen">
         {children}
       </main>
       <footer className="w-full h-12 flex justify-center items-center border-t">
@@ -42,6 +42,7 @@ export default function Layout({ children, title = "HP by Nextjs" }) {
           rel="noopener noreferrer"
         >
           Powered by{" "}
+          {/* <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" /> */}
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
